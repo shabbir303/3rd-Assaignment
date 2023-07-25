@@ -1,11 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fruit-Brust</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- raw style -->
+    <style>
+       .font-lato{
+        font-family: 'Lato', sans-serif;
+       }
+    </style>
+
+    <!-- tailwind style -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body>
-    
+
+<body class="font-lato container mx-auto ">
+ <header>
+    <nav class="sm:hidden">
+        <div class="navbar  bg-[#F85559] rounded-[100px] mt-[50px] px-[36px] py-[36px] ">
+            
+            <div class="navbar-start hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-white ">
+                <li><a>Home</a></li>
+                <li>
+                   <a> About Us</a>
+                </li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+            <div class="navbar-center gap-[10px]">
+                <img src="./images/logo.png" alt="">
+            <a class=" text-[40px] text-white font-lato font-[700] text-right">Fruit Burst</a>
+            </div>
+            <div class="navbar-end ">
+              <input type="search" name="" id="" placeholder="Search here" class="lg:p-[20px] lg:px-[30px] rounded-[50px]">
+              <i class="fa-solid fa-magnifying-glass absolute lg:right-[250px]" ></i>
+            </div>
+          </div>
+    </nav>
+ </header>
+ <main>
+
+ </main>
+ <footer>
+
+ </footer>
 </body>
+
 </html>
